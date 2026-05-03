@@ -5,21 +5,21 @@
 class Nullapt < Formula
   desc "The private-first package manager for AI skills"
   homepage "https://nullapt.dev"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nullapt/nullapt/releases/download/v0.1.3/nullapt_0.1.3_darwin_amd64.tar.gz"
-      sha256 "509c33818f50bf86273002f1e2b9f26b60baa9ce41ee4ef02e939cb97e25bc9f"
+      url "https://github.com/nullapt/nullapt/releases/download/v0.1.4/nullapt_0.1.4_darwin_amd64.tar.gz"
+      sha256 "bc752fdae3cad03606690b849b6e9802239a2ce4554f868bb55fceb926f43574"
 
       define_method(:install) do
         bin.install "nullapt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nullapt/nullapt/releases/download/v0.1.3/nullapt_0.1.3_darwin_arm64.tar.gz"
-      sha256 "a53276208899e4b2a2b58c67caa25ecd1bd6d0622e6ce6d0d716f66d9b2cfded"
+      url "https://github.com/nullapt/nullapt/releases/download/v0.1.4/nullapt_0.1.4_darwin_arm64.tar.gz"
+      sha256 "54417785648ef0805897ef97a8f60d9f15d4d2b672fa89326856df7e3e3b6589"
 
       define_method(:install) do
         bin.install "nullapt"
@@ -29,15 +29,15 @@ class Nullapt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nullapt/nullapt/releases/download/v0.1.3/nullapt_0.1.3_linux_amd64.tar.gz"
-      sha256 "9479ce384430d4362c4c8021ebf15e7ccde8c5abdc2de877d45053617dbcd8b8"
+      url "https://github.com/nullapt/nullapt/releases/download/v0.1.4/nullapt_0.1.4_linux_amd64.tar.gz"
+      sha256 "5bfd87326e5cd3a180b0465ec8d0b2337b062872364cfd410ffcfc76adda2f59"
       define_method(:install) do
         bin.install "nullapt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nullapt/nullapt/releases/download/v0.1.3/nullapt_0.1.3_linux_arm64.tar.gz"
-      sha256 "b0822bd08383ffdaf4797c19ef73627060cba8a078fb2d6e47380277d6b8c2fc"
+      url "https://github.com/nullapt/nullapt/releases/download/v0.1.4/nullapt_0.1.4_linux_arm64.tar.gz"
+      sha256 "bf3bd51111a6f7932018681c8f15de8aaefa17089e0d43ed693aadd110312865"
       define_method(:install) do
         bin.install "nullapt"
       end
